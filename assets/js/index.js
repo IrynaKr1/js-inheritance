@@ -69,7 +69,7 @@ class PassengerTransport extends Vehicle {
   }
 
   getFullInfo() {
-    return `Vehicle brand is ${this._brand}, model: ${this._model}, age: ${this.age}, max seats: ${this._passengerLimit}`;
+    return `${super.getFullInfo()}, max seats: ${this._passengerLimit}`;
   }
 }
 
